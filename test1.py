@@ -41,8 +41,8 @@ def score_for_ratios(ratio_1, ratio_2):
     
     return score
 
-ratio_1s = linspace(1, 2, 100)
-ratio_2s = linspace(1, 2, 100)
+ratio_1s = linspace(1, 2, 500)
+ratio_2s = linspace(1, 2, 500)
 
 Ratio_1s, Ratio_2s = meshgrid(ratio_1s, ratio_2s)
 Scores = zeros(Ratio_1s.shape)
@@ -61,7 +61,7 @@ def calc(b):
     i1, i2, j1, j2 = b
     return calc_block(i1, i2, j1, j2)
 
-step_size = 10
+step_size = 20
 
 blocks = [ ]
 
